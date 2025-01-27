@@ -1,0 +1,12 @@
+:root {
+    --primary: #6DA48F;
+    --primary-dark: #25414C;
+}
+
+.primary {
+    color: #6DA48F;
+}
+
+.primary-dark {
+    color: #25414C;
+}
