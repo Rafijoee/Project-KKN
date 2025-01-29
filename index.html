@@ -44,13 +44,13 @@
         <img src="images/cobain.jpg" alt="" class="w-full h-[450px] object-cover z-0" />
         <!-- Ini untuk div tulisan welcome -->
         <div class="absolute inset-0 flex flex-col mt-[9%] items-center">
-          <div class="bg-[#6DA48F] rounded-lg p-1">
+          <div class="bg-white/40 backdrop-blur-sm rounded-lg p-1">
             <h1 class="text-center text-4xl font-bold text-white">Selamat Datang di Klungkung</h1>
             <p class="text-center text-lg text-white mx-2">Klungkung adalah salah satu desa di Jember yang memiliki banyak tempat wisata yang menarik</p>
           </div>
           <!-- Ini untuk div tulisan tentang klungkung -->
-          <div class="absolute justify-center items-center flex rounded-sm bg-amber-200 p-2 sm:mt-[10%] mt-[50%] hover:bg-amber-400">
-            <a href="#" class="rounded-sm flex items-center text-black font-semibold"> Tentang Klungkung <span class="font-bold ml-2"> > </span> </a>
+          <div class="absolute justify-center items-center flex rounded-sm bg-[#6DA48F] p-2 sm:mt-[10%] mt-[50%] hover:bg-amber-400">
+            <a href="#" class="rounded-sm flex items-center text-white font-semibold"> Tentang Klungkung <span class="font-bold ml-2"> > </span> </a>
           </div>
         </div>
       </div>
@@ -76,18 +76,32 @@
 
     <div>
       <div class="relative z-0">
-        <img src="images/produk.jpg" alt="" class="w-full h-[420px] object-cover z-0" />
+        <img src="images/produk.jpg" alt="" class="w-full h-[450px] object-cover z-0" />
         <div class="absolute inset-0 flex flex-col justify-center items-center">
-          <div class="bg-[#6DA48F] rounded-lg p-1">
-            <h1 class="text-center text-4xl font-bold text-white">Selamat Datang di Klungkung</h1>
-            <p class="text-center text-lg text-white">Klungkung adalah salah satu kabupaten di Bali yang memiliki banyak tempat wisata yang menarik</p>
+          <div class=" rounded-lg p-1">
+            <h1 class="text-center text-4xl font-bold text-white">Produk</h1>
           </div>
-          <!-- <div class="absolute justify-center items-center flex mt-36 rounded-sm bg-amber-200 p-2">
-            <a href="#" class="rounded-sm flex items-center text-black font-semibold"> Tentang  as Klungkung <span class="font-bold ml-2"> > </span> </a>
-          </div> -->
+          <div class="absolute justify-center items-center mt-10 flex sm:mt-[9%] rounded-sm bg-[#6DA48F] p-2">
+            <a href="#" class="rounded-sm flex items-center  text-white font-semibold"> Semua Produk <span class="font-bold ml-2"> > </span> </a>
+          </div>
         </div>
       </div>
     </div>
+    <div class="bg-[#6DA48F] h-40 flex justify-center relative z-10">
+      <!-- Div card 1 -->
+      <div class="bg-white w-[301px] h-[227px] mx-5 -mt-[29%] sm:block sm:-mt-[10%] md:pr-1.5 pr-1.5 sm:p-0">
+        <img src="./images/desa_klungkung.jpg" class="w-[295px] h-[221px] m-[3px]" alt="" />
+      </div>
+      <!-- Div card 2 -->
+      <div class="bg-white md:pr-1.5 w-[301px] h-[227px] mx-5 -mt-[30%]  sm:-mt-[10%] pr-1.5 sm:p-0">
+        <img src="./images/desa_klungkung.jpg" class="w-[295px] h-[221px] m-[3px]" alt="" />
+      </div>
+      <!-- Div card 3 (hidden on small screens) -->
+      <div class="bg-white w-[301px] md:pr-1.5 h-[227px] mx-5 -mt-[10%] hidden md:block">
+        <img src="./images/desa_klungkung.jpg" class="w-[295px] h-[221px] m-[3px]" alt="" />
+      </div>
+    </div>
+
 
     <script>
       function toggleMenu() {
