@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link href="./src/input.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  </head>
+  <body class="poppins">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md" id="atas">
+      <div class="max-w-7xl px-4 sm:px-6 lg:px-8 w-full mx-auto">
+        <div class="flex justify-between items-center h-16 w-full">
+          <a href="/" class="flex items-center">
+            <img src="images/Logo_KKN.png" alt="" class="h-12" />
+            <span class="text-2xl font-bold text-[#6DA48F] ml-2">KLUNGKUNG</span>
+          </a>
+          <div class="hidden md:flex space-x-4 items-center justify-self-center">
+            <a href="/" class="text-[#6DA48F] hover:text-[#25414C] px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
+            <a href="produk.html" class="text-[#6DA48F] hover:text-[#25414C] px-3 py-2 rounded-md text-sm font-medium">Produk</a>
+            <a href="wisata.html" class="text-[#6DA48F] hover:text-[#25414C] px-3 py-2 rounded-md text-sm font-medium">Wisata dan Kesenian</a>
+          </div>
+          <div class="md:hidden">
+            <button onclick="toggleMenu()" class="text-gray-500 hover:text-gray-600 focus:outline-none">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="md:hidden hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="" class="text-[#6DA48F] hover:text-[#25414C] block px-3 py-2 rounded-md text-base font-medium">Beranda</a>
+          <a href="#" class="text-[#6DA48F] hover:text-[#25414C] block px-3 py-2 rounded-md text-base font-medium">Produk</a>
+          <a href="#" class="text-[#6DA48F] hover:text-[#25414C] block px-3 py-2 rounded-md text-base font-medium">Wisata dan Kesenian</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="w-full p-4 rounded-xl mt-16">
+      <p class="text-center text-2xl poppins font-bold">Wisata dan Kesenian Desa Klungkung</p>
+      <hr class="text-gray-400 text-3xl font-extrabold my-4 bg-amber-200" />
+      <!-- Ini pertama -->
+      <div class="flex mx-20">
+        <!-- ini gambar -->
+        <div class="basis-1/2">
+          <img src="./images/product_1.jpg" class="w-full" alt="" />
+        </div>
+        <!-- ini tulisan -->
+        <div class="basis-1/2 bg-gray-100 flex-col justify-center flex">
+          <p class="mx-10 flex mb-10 font-semibold text-3xl">INI JUDUL NYA</p>
+          <p class="mx-10 flex text-sm mb-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam incidunt autem nihil, nemo nostrum est. Nulla a tenetur alias deleniti maxime voluptatibus officia! Fugit mollitia ad nulla nam.
+          </p>
+          <p class="mx-10 flex text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam incidunt autem nihil, nemo nostrum est. Nulla a tenetur alias deleniti maxime voluptatibus officia! Fugit mollitia ad nulla nam.</p>
+          <div class="flex rounded-sm bg-[#6DA48F] text-sm p-2 justify-center items-center mx-10 hover:bg-[#25414C] mt-10 w-[17%] text-white">
+            <a href="" class="w-full text-center">Nama Nya</a>
+          </div>
+        </div>
+      </div>
+      <!-- ini kedua -->
+      <div class="flex mx-20">
+        <!-- ini tulisan -->
+        <div class="basis-1/2 bg-gray-100 flex-col justify-center flex">
+          <p class="mx-10 flex mb-10 font-semibold text-3xl">INI JUDUL NYA</p>
+          <p class="mx-10 flex text-sm mb-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam incidunt autem nihil, nemo nostrum est. Nulla a tenetur alias deleniti maxime voluptatibus officia! Fugit mollitia ad nulla nam.
+          </p>
+          <p class="mx-10 flex text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam incidunt autem nihil, nemo nostrum est. Nulla a tenetur alias deleniti maxime voluptatibus officia! Fugit mollitia ad nulla nam.</p>
+          <div class="flex rounded-sm bg-[#6DA48F] text-sm p-2 justify-center items-center mx-10 hover:bg-[#25414C] mt-10 w-[17%] text-white">
+            <a href="" class="w-full text-center">Nama Nya</a>
+          </div>
+        </div>
+        <!-- ini gambar -->
+        <div class="basis-1/2">
+          <img src="./images/product_1.jpg" class="w-full" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-[#25414C] text-white">
+      <div class="mx-auto w-full max-w-screen-xl p-6 lg:py-10">
+        <div class="md:flex md:justify-between md:items-center">
+          <!-- Logo -->
+          <div class="mb-6 md:mb-0">
+            <a href="index.html" class="flex items-center">
+              <span class="self-center text-3xl font-bold whitespace-nowrap text-primary-dark">Klungkung</span>
+            </a>
+          </div>
+
+          <!-- Navigasi Footer -->
+          <div class="grid grid-cols-2 gap-8 sm:grid-cols-3">
+            <!-- Menu -->
+            <div>
+              <h2 class="mb-4 text-lg font-semibold text-primary-dark uppercase mx-2">Menu</h2>
+              <ul class="space-y-2 text-primary text-sm mx-2">
+                <li><a href="index.html" class="hover:text-primary-dark transition">Beranda</a></li>
+                <li><a href="produk.html" class="hover:text-primary-dark transition">Produk</a></li>
+                <li><a href="wisata.html" class="hover:text-primary-dark transition">Wisata & Kesenian</a></li>
+              </ul>
+            </div>
+
+            <!-- Hubungi Kami -->
+            <div>
+              <h2 class="mb-4 text-lg font-semibold text-primary-dark uppercase mx-2">Hubungi Kami</h2>
+              <ul class="space-y-2 text-primary text-sm mx-2">
+                <li><a href="#" class="hover:text-primary-dark transition">Telepon</a></li>
+                <li><a href="#" class="hover:text-primary-dark transition">Email</a></li>
+              </ul>
+            </div>
+
+            <!-- Sosial Media -->
+            <div>
+              <h2 class="mb-4 text-lg font-semibold text-primary-dark uppercase mx-2">Sosial Media</h2>
+              <ul class="space-y-2 text-primary text-sm mx-2">
+                <li>
+                  <a href="https://www.instagram.com/kkn_klungkung3?igsh=MTczNjJkZnk1Zm80Ng%3D%3D" target="_blank" class="flex items-center space-x-2 hover:text-primary-dark transition">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="w-6 h-6" />
+                    <span>Instagram</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Garis Pemisah -->
+        <hr class="my-8 border-gray-400 sm:mx-auto" />
+
+        <!-- Copyright -->
+        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center text-center">
+          <span class="text-sm text-primary">© 2024 Desa Klungkung. All Rights Reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const mobileMenu = document.getElementById("mobile-menu");
+        mobileMenu.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
