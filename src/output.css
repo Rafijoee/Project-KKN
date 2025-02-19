@@ -2251,6 +2251,9 @@
   .text-\[\#6DA48F\] {
     color: #6DA48F;
   }
+  .text-black {
+    color: var(--color-black);
+  }
   .text-blue-500 {
     color: var(--color-blue-500);
   }
