@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/output.css" rel="stylesheet" />
+    <link href="./src/input.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  </head>
+  <body class="poppins text-justify">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md" id="atas">
+      <div class="max-w-7xl px-4 sm:px-6 lg:px-8 w-full mx-auto">
+        <div class="flex justify-between items-center h-16 w-full">
+          <a href="/" class="flex items-center">
+            <img src="images/Logo_KKN.png" alt="" class="h-12" />
+            <span class="text-2xl font-bold text-[#6DA48F] ml-2">KLUNGKUNG</span>
+          </a>
+          <div class="hidden md:flex space-x-4 items-center justify-self-center">
+            <a href="/umkm.html" class="text-[#6DA48F] hover:text-[#25414C] px-3 py-2 rounded-md text-sm font-medium">UMKM</a>
+            <a href="/kesenian.html" class="text-[#6DA48F] hover:text-[#25414C] px-3 py-2 rounded-md text-sm font-medium">Kesenian</a>
+            <a href="/wisata.html" class="text-[#6DA48F] hover:text-[#25414C] px-3 py-2 rounded-md text-sm font-medium">Wisata</a>
+            <a href="/budaya.html" class="text-[#6DA48F] hover:text-[#25414C] px-3 py-2 rounded-md text-sm font-medium">Budaya</a>
+            <a href="/event.html" class="text-[#6DA48F] hover:text-[#25414C] px-3 py-2 rounded-md text-sm font-medium">Event</a>
+          </div>
+          <div class="md:hidden">
+            <button onclick="toggleMenu()" class="text-gray-500 hover:text-gray-600 focus:outline-none">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="md:hidden hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="/umkm.html" class="text-[#6DA48F] hover:text-[#25414C] block px-3 py-2 rounded-md text-base font-medium">UMKM</a>
+          <a href="/kesenian.html" class="text-[#6DA48F] hover:text-[#25414C] block px-3 py-2 rounded-md text-base font-medium">Kesenian</a>
+          <a href="/wisata.html" class="text-[#6DA48F] hover:text-[#25414C] block px-3 py-2 rounded-md text-base font-medium">Wisata</a>
+          <a href="/budaya.html" class="text-[#6DA48F] hover:text-[#25414C] block px-3 py-2 rounded-md text-base font-medium">Budaya</a>
+          <a href="/event.html" class="text-[#6DA48F] hover:text-[#25414C] block px-3 py-2 rounded-md text-base font-medium">Event</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="pt-16 bg-gray-100">
+      <div class="max-w-5xl mx-auto bg-white p-8 rounded-2xl shadow-2xl mt-10 mb-10 fade-in">
+        <h1 class="text-4xl font-bold text-center mt-5">DESA KLUNGKUNG</h1>
+        <p class="text-gray-500 mt-2 text-center mb-5">kecamatan Sukorambi, Jember, Jawa Timur, Indonesia.</p>
+        <img src="/images/klungkung.jpeg" class="px-10 w-full h-[400px]" alt="" />
+        <div class="justify-center text-center"></div>
+
+        <!-- Sejarah -->
+        <div class="my-8 p-8 bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl shadow-sm">
+            <div class="flex items-center mb-6">
+              <!-- Icon -->
+              <div class="bg-purple-600 p-3 rounded-lg shadow-md">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                </svg>
+              </div>
+              <!-- Judul -->
+              <h2 class="text-2xl font-bold text-gray-800 ml-4">Sejarah Desa Klungkung</h2>
+            </div>
+          
+            <!-- Konten Sejarah -->
+            <div class="text-gray-600 leading-relaxed">
+              <p class="mb-4">
+                Desa Klungkung adalah salah satu desa yang terletak di Kecamatan Sukorambi, Kabupaten Jember. Sampai saat ini, sejarah kelahiran Desa Klungkung belum bisa diketahui secara pasti karena tidak adanya bukti-bukti tertulis yang
+                menerangkan tentang asal usul atau sejarah dari Desa Klungkung. Akan tetapi, berdasarkan cerita dari para tetua kami dan keterangan informasi yang melekat di masyarakat, dahulu kala ada seorang raja kerajaan Majapahit
+                yang singgah untuk beristirahat di suatu tempat atau istilah dalam orang Madura disebut <strong>"Kalongghuen"</strong>, yang artinya tempat persinggahan. Sehingga berasal dari kata <strong>"Kalongghuen"</strong> ini, masyarakat setempat memberi nama Desa
+                Klungkung.
+              </p>
+          
+              <p class="mb-4">
+                Desa Klungkung terdiri dari 3 (tiga) dusun, yakni:
+              </p>
+          
+              <!-- Daftar Dusun -->
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                <!-- Dusun Krajan -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                  <h3 class="font-semibold text-purple-600 mb-2 text-center">Dusun Krajan</h3>
+                  <p class="text-sm text-gray-600">
+                    Dusun Krajan merupakan Ibu Kota Desa Klungkung yang menjadi tempat persinggahan Raja Majapahit. Memiliki potensi budaya seperti Patrol Remika, Kesenian Ludruk Hasib Budaya, Kesenian Ludruk Sumber Mawar, Kesenian Pencak Silat Garda Pati, Kesenian Pencak Silat Rukun Pemuda, dan Seni Ukir Rumah Merpati.
+                  </p>
+                </div>
+          
+                <!-- Dusun Gendir -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                  <h3 class="font-semibold text-purple-600 mb-2 text-center">Dusun Gendir</h3>
+                  <p class="text-sm text-gray-600">
+                    Nama Dusun Gendir berasal dari kepercayaan masyarakat bahwa di wilayah ini merupakan tempat petilasan Patih Logender. Terdapat Kesenian Drumblek, Kesenian Saman Namli, dan Kesenian Macopat.
+                  </p>
+                </div>
+          
+                <!-- Dusun Mujan -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                  <h3 class="font-semibold text-purple-600 mb-2 text-center">Dusun Mujan</h3>
+                  <p class="text-sm text-gray-600">
+                    Nama Dusun Mujan berasal dari kata <strong>“Pemujaan”</strong>. Wilayah ini dijadikan oleh masyarakat setempat untuk melakukan pemujaan kepada Tuhan Yang Maha Kuasa sebagai wujud syukur dan meminta perlindungan serta permohonan lainnya. Hal ini dibuktikan dengan adanya Ritus Sandorellang yang masih bertahan dan tetap dilaksanakan setiap satu tahun sekali pada tanggal 1 Suro atau 1 Muharrom pada kalender Hijriyah.
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Kepala Desa -->
+        <div class="my-8 p-8 bg-gradient-to-r from-purple-50 to-indigo-50 rounded-2xl shadow-sm">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Kepala Desa Klungkung</h2>
+            <div class="flex flex-col md:flex-row items-stretch justify-center gap-6">
+            <!-- Bagian Gambar -->
+            <div class="w-full md:w-4/12 bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105 flex flex-col">
+                <img src="images/staff/pemdes kades.png" alt="Kepala Desa Klungkung" class="w-full h-auto rounded-lg" />
+                <p class="font-extrabold text-xl mt-4 text-gray-700 text-center">ABDUL GAFUR</p>
+                <p class="font-medium text-sm text-gray-500 text-center">Kepala Desa</p>
+            </div>
+        
+            <!-- Bagian Tulisan -->
+            <div class="w-full md:w-8/12 bg-white rounded-lg shadow-lg p-6 flex flex-col">
+                <p class="text-sm text-gray-600 leading-relaxed">
+                Desa Klungkung adalah desa yang sangat damai dengan lurah/kepala desa seumur hidup bernama Bapak Nuri. Beliau merupakan tokoh yang paling disegani di daerah Klungkung. Adapun kepala desa yang menjabat di Desa Klungkung
+                hingga saat ini diantaranya:
+                </p>
+                <ul class="list-disc list-inside mt-4 text-sm text-gray-600">
+                <li>Bapak Nuri</li>
+                <li>Bapak Karyen</li>
+                <li>Bapak Durahman</li>
+                <li>Bapak Suhan</li>
+                <li>Bapak Kamsuri</li>
+                <li>Bapak Sa’i</li>
+                <li>Bapak Soetadji</li>
+                <li>Bapak H. Husin, ST.</li>
+                <li>Bapak Adi Sunarto, SE</li>
+                <li>Bapak Abdul Gafur</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+        <!-- Staff -->
+        <div class="my-8 p-8 bg-gradient-to-r from-purple-50 to-indigo-50 rounded-2xl shadow-sm">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Staff Desa Klungkung</h2>
+            <!-- Bagian Gambar -->
+            <div class="w-full flex justify-center items-center">
+              <div class="flex flex-row  justify-center gap-4 md:w-2/12">
+                <img src="images/staff/1.jpg" alt="Staff Desa Klungkung" class="w-24 h-24 md:w-full md:h-auto rounded-lg object-cover shadow-md" />
+                <img src="images/staff/2.jpg" alt="Staff Desa Klungkung" class="w-24 h-24 md:w-full md:h-auto rounded-lg object-cover shadow-md" />
+                <img src="images/staff/3.jpg" alt="Staff Desa Klungkung" class="w-24 h-24 md:w-full md:h-auto rounded-lg object-cover shadow-md" />
+                <img src="images/staff/4.jpg" alt="Staff Desa Klungkung" class="w-24 h-24 md:w-full md:h-auto rounded-lg object-cover shadow-md" />
+                <img src="images/staff/5.jpg" alt="Staff Desa Klungkung" class="w-24 h-24 md:w-full md:h-auto rounded-lg object-cover shadow-md" />
+              </div>
+            </div>
+            <div class="w-full flex justify-center items-center mt-4">
+              <div class="flex flex-row  justify-center gap-4 md:w-2/12">
+                <img src="images/staff/6.jpg" alt="Staff Desa Klungkung" class="w-24 h-24 md:w-full md:h-auto rounded-lg object-cover shadow-md" />
+                <img src="images/staff/7.jpg" alt="Staff Desa Klungkung" class="w-24 h-24 md:w-full md:h-auto rounded-lg object-cover shadow-md" />
+                <img src="images/staff/8.jpg" alt="Staff Desa Klungkung" class="w-24 h-24 md:w-full md:h-auto rounded-lg object-cover shadow-md" />
+                <img src="images/staff/9.jpg" alt="Staff Desa Klungkung" class="w-24 h-24 md:w-full md:h-auto rounded-lg object-cover shadow-md" />
+                <img src="images/staff/10.jpg" alt="Staff Desa Klungkung" class="w-24 h-24 md:w-full md:h-auto rounded-lg object-cover shadow-md" />
+              </div>
+            </div>
+            <div class="w-full flex justify-center items-center mt-4">
+              <div class="flex flex-row  justify-center gap-4 md:w-2/12">
+                <img src="images/staff/11.jpg" alt="Staff Desa Klungkung" class="w-24 h-24 md:w-full md:h-auto rounded-lg object-cover shadow-md" />
+                <img src="images/staff/12.jpg" alt="Staff Desa Klungkung" class="w-24 h-24 md:w-full md:h-auto rounded-lg object-cover shadow-md" />
+                <img src="images/staff/13.jpg" alt="Staff Desa Klungkung" class="w-24 h-24 md:w-full md:h-auto rounded-lg object-cover shadow-md" />
+              </div>
+            </div>
+        </div>
+
+        <!-- Geografi dan Demografi Penduduk Desa Klungkung -->
+        <div class="my-8 p-8 bg-gradient-to-r from-purple-50 to-indigo-50 rounded-2xl shadow-sm">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Geografi dan Demografi Penduduk Desa Klungkung</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+              <!-- Bagian Teks Utama -->
+              <div class="w-full p-6">
+                <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                  Desa Klungkung terletak di lereng Gunung Argopuro. Gunung Argopuro adalah gunung berapi kompleks di Jawa Timur dengan ketinggian 3.088 meter. Gunung ini berada di kawasan Suaka Margasatwa Pegunungan Hyang, yang menjadikan Desa Klungkung memiliki kondisi alam yang asri dan sejuk.
+                </p>
+          
+                <!-- Informasi Geografis -->
+                <div class="mb-6">
+                  <h3 class="text-lg font-semibold text-purple-600 mb-2">Batas Wilayah Desa Klungkung</h3>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                      <p class="text-sm text-gray-600"><strong>Sebelah Utara:</strong> Wilayah hutan Kabupaten Bondowoso</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                      <p class="text-sm text-gray-600"><strong>Sebelah Timur:</strong> Kelurahan Bintoro, Kecamatan Patrang</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                      <p class="text-sm text-gray-600"><strong>Sebelah Selatan:</strong> Kelurahan Jumerto, Kecamatan Patrang</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                      <p class="text-sm text-gray-600"><strong>Sebelah Barat:</strong> Desa Karangpring, Kecamatan Sukorambi</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Akses Jalan -->
+                <div class="mb-6">
+                  <h3 class="text-lg font-semibold text-purple-600 mb-2">Akses Jalan</h3>
+                  <p class="text-sm text-gray-600 leading-relaxed">
+                    Akses jalan menuju Desa Klungkung dapat menggunakan kendaraan roda dua maupun roda empat. Sepanjang perjalanan menuju Desa Klungkung, tersaji pemandangan desa yang asri dengan nuansa pegunungan yang masih sejuk.
+                  </p>
+                </div>
+          
+                <!-- Jarak Tempuh -->
+                <div class="mb-6">
+                  <h3 class="text-lg font-semibold text-purple-600 mb-2">Jarak Tempuh</h3>
+                  <ul class="list-disc list-inside text-sm text-gray-600">
+                    <li>Ke Ibu Kota Kecamatan Sukorambi: ± 8 km (20 menit)</li>
+                    <li>Ke Ibu Kota Kabupaten Jember: ± 9,3 km (24 menit)</li>
+                  </ul>
+                </div>
+          
+                <!-- Demografi Penduduk -->
+                <div>
+                  <h3 class="text-lg font-semibold text-purple-600 mb-2">Demografi Penduduk</h3>
+                  <p class="text-sm text-gray-600 leading-relaxed">
+                    Berdasarkan data administrasi, jumlah penduduk Desa Klungkung sebanyak 5.159 jiwa, terdiri dari 2.453 laki-laki dan 2.706 perempuan. Jumlah penduduk tersebut tergabung dalam 2.002 kepala keluarga. Dari jumlah penduduk, sebanyak 3.122 jiwa (60,52%) merupakan penduduk usia produktif, yang merupakan modal bagi pengadaan tenaga produktif dan sumber daya manusia potensial.
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Alamat Kantor Desa -->
+        <div class="my-8 p-8 bg-gradient-to-r from-purple-100 to-indigo-100 rounded-2xl shadow-lg border border-purple-300">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Alamat Kantor Desa Klungkung</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                <!-- Bagian Teks Utama -->
+                <div class="w-full p-6 bg-white rounded-lg shadow-md">
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4 text-center">
+                        Kantor Desa Klungkung berlokasi di Dusun Krajan, Desa Klungkung, Kecamatan Sukorambi, Kabupaten Jember, Provinsi Jawa Timur. Kantor ini menjadi pusat administrasi dan layanan bagi masyarakat Desa Klungkung.
+                    </p>
+        
+                    <!-- Informasi Alamat -->
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold text-purple-600 mb-2 text-center">Detail Alamat</h3>
+                        <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                            <p class="text-sm text-gray-600"><strong>RT/RW:</strong> 002/002</p>
+                            <p class="text-sm text-gray-600"><strong>Dusun:</strong> Krajan</p>
+                            <p class="text-sm text-gray-600"><strong>Desa:</strong> Klungkung</p>
+                            <p class="text-sm text-gray-600"><strong>Kecamatan:</strong> Sukorambi</p>
+                            <p class="text-sm text-gray-600"><strong>Kabupaten:</strong> Jember</p>
+                            <p class="text-sm text-gray-600"><strong>Provinsi:</strong> Jawa Timur</p>
+                        </div>
+                    </div>
+        
+                    <!-- Peta Lokasi -->
+                    <div class="mb-6 text-center">
+                        <h3 class="text-lg font-semibold text-purple-600 mb-2">Lokasi Klungkung</h3>
+                        <div class="flex items-center text-center justify-center">
+                            <img src="/images/staff/media.png" class="" alt="">
+                        </div>
+                        <p class="text-sm text-gray-600 leading-relaxed mt-4">
+                            Klik tautan di bawah ini untuk melihat lokasi Kantor Desa Klungkung di Google Maps.
+                        </p>
+                        <a href="https://maps.app.goo.gl/QbMqykC6AvFUHxZy8" target="_blank" 
+                           class="text-purple-600 font-semibold underline">Lihat di Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hubungi Kami -->
+         <!-- Hubungi Kami -->
+<div class="my-8 p-8 bg-gradient-to-r from-purple-50 to-indigo-50 rounded-2xl shadow-sm">
+    <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Hubungi Kami</h2>
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <!-- Email -->
+      <div class="flex items-center mb-4">
+        <div class="bg-purple-600 p-3 rounded-lg shadow-md">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+          </svg>
+        </div>
+        <div class="ml-4">
+          <p class="text-sm text-gray-600">Email</p>
+          <a href="mailto:pemdesklungkung45@gmail.com" class="text-purple-600 hover:text-purple-800">pemdesklungkung45@gmail.com</a>
+        </div>
+      </div>
+  
+      <!-- Facebook -->
+      <div class="flex items-center mb-4">
+        <div class="bg-blue-600 p-3 rounded-lg shadow-md">
+          <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+          </svg>
+        </div>
+        <div class="ml-4">
+          <p class="text-sm text-gray-600">Facebook</p>
+          <a href="https://facebook.com/PemdesKlungkung" target="_blank" class="text-blue-600 hover:text-blue-800">Pemdes Klungkung</a>
+        </div>
+      </div>
+  
+      <!-- Instagram -->
+      <div class="flex items-center mb-4">
+        <div class="bg-pink-600 p-3 rounded-lg shadow-md">
+          <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+          </svg>
+        </div>
+        <div class="ml-4">
+          <p class="text-sm text-gray-600">Instagram</p>
+          <a href="https://instagram.com/desaklungkung" target="_blank" class="text-pink-600 hover:text-pink-800">@desaklungkung</a>
+        </div>
+      </div>
+  
+      <!-- Website Desa -->
+      <div class="flex items-center mb-4">
+        <div class="bg-green-600 p-3 rounded-lg shadow-md">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+          </svg>
+        </div>
+        <div class="ml-4">
+          <p class="text-sm text-gray-600">Website Desa</p>
+          <a href="https://ppid-desa.jemberkab.go.id/desa/klungkung" target="_blank" class="text-green-600 hover:text-green-800">ppid-desa.jemberkab.go.id/desa/klungkung</a>
+        </div>
+      </div>
+  
+      <!-- Website Kebudayaan -->
+      <div class="flex items-center">
+        <div class="bg-orange-600 p-3 rounded-lg shadow-md">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+          </svg>
+        </div>
+        <div class="ml-4">
+          <p class="text-sm text-gray-600">Website Kebudayaan</p>
+          <a href="https://bit.ly/kebudayaandesaklungkung" target="_blank" class="text-orange-600 hover:text-orange-800">bit.ly/kebudayaandesaklungkung</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#25414C] text-white">
+      <div class="mx-auto w-full max-w-screen-xl p-6 lg:py-10">
+        <div class="md:flex md:justify-between md:items-center">
+          <!-- Logo -->
+          <div class="mb-6 md:mb-0">
+            <a href="/" class="flex items-center">
+              <span class="self-center text-3xl font-bold whitespace-nowrap text-primary-dark">Klungkung</span>
+            </a>
+          </div>
+
+          <!-- Navigasi Footer -->
+          <div class="grid grid-cols-2 gap-8 sm:grid-cols-3">
+            <!-- Menu -->
+            <div>
+              <h2 class="mb-4 text-lg font-semibold text-primary-dark uppercase mx-2">Menu</h2>
+              <ul class="space-y-2 text-primary text-sm mx-2">
+                <li><a href="/index.html" class="hover:text-primary-dark transition">Beranda</a></li>
+                <li><a href="/produk.html" class="hover:text-primary-dark transition">Produk</a></li>
+                <li><a href="/wisata.html" class="hover:text-primary-dark transition">Wisata</a></li>
+                <li><a href="/kesenian.html" class="hover:text-primary-dark transition">Kesenian</a></li>
+              </ul>
+            </div>
+
+            <!-- Hubungi Kami -->
+            <div>
+              <h2 class="mb-4 text-lg font-semibold text-primary-dark uppercase mx-2">Hubungi Kami</h2>
+              <ul class="space-y-2 text-primary text-sm mx-2">
+                <li><a href="#" class="hover:text-primary-dark transition">Telepon</a></li>
+                <li><a href="#" class="hover:text-primary-dark transition">Email</a></li>
+              </ul>
+            </div>
+
+            <!-- Sosial Media -->
+            <div>
+              <h2 class="mb-4 text-lg font-semibold text-primary-dark uppercase mx-2">Sosial Media</h2>
+              <ul class="space-y-2 text-primary text-sm mx-2">
+                <li>
+                  <a href="https://www.instagram.com/kkn_klungkung3?igsh=MTczNjJkZnk1Zm80Ng%3D%3D" target="_blank" class="flex items-center space-x-2 hover:text-primary-dark transition">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="w-6 h-6" />
+                    <span>Instagram</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Garis Pemisah -->
+        <hr class="my-8 border-gray-400 sm:mx-auto" />
+
+        <!-- Copyright -->
+        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center text-center">
+          <span class="text-sm text-primary">© 2024 Desa Klungkung.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const mobileMenu = document.getElementById("mobile-menu");
+        mobileMenu.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
